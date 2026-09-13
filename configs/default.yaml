@@ -1,0 +1,13 @@
+model:
+  attention: rope
+  lapa_enabled: true
+  task: field_discovery
+  dim: 32
+  heads: 4
+  layers: 2
+  ff_dim: 64
+  max_length: 1024
+  slots: 64
+  epsilon: 0.02
+  implementation: native_v4_compact
+  injection: retrieval

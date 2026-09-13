@@ -1,0 +1,5 @@
+# Preserve the original Matplotlib SVG bytes and sealed hashes. Path commands
+# contain generator-produced trailing spaces; keep normal checks for other files.
+research_archive/studies/*/figures/*.svg -whitespace
+# One preserved historical report ends in an additional blank line.
+research_archive/studies/formula_search_v17/DATA_LIMITATIONS.md whitespace=-blank-at-eof

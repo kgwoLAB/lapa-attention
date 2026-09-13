@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Protocol-semantic endpoint p\_true; three-seed means, matching fields.}
+\begin{tabular}{lrrrrrr}
+\toprule
+Method & dns-LENGTH (n=230) & dns-POINTER (n=36) & modbus-LENGTH (n=6) & tls-LENGTH (n=15) & smb2-LENGTH (n=30) & smb2-OFFSET (n=30) \\
+\midrule
+RoPE Off & 0.056035 & 0.000038 & 0.528788 & 0.976681 & 0.052966 & 0.000235 \\
+RoPE + LAPA (v17) & 0.016884 & 0.006754 & 0.816232 & 0.818085 & 0.064690 & 0.002341 \\
+CoPE Off & 0.038582 & 0.001313 & 0.306398 & 0.995487 & 0.104287 & 0.000511 \\
+CoPE + LAPA (v17) & 0.013423 & 0.007474 & 0.808971 & 0.999162 & 0.007646 & 0.000894 \\
+TAPE Off & 0.039682 & 0.000134 & 0.522511 & 0.984566 & 0.058955 & 0.000494 \\
+TAPE + LAPA (v17) & 0.017513 & 0.005098 & 0.816296 & 0.850640 & 0.119859 & 0.002677 \\
+SDPA Off & 0.052410 & 0.000991 & 0.439812 & 0.998925 & 0.080220 & 0.000414 \\
+SDPA + LAPA (v17) & 0.010374 & 0.007175 & 0.644772 & 0.999748 & 0.006690 & 0.000741 \\
+Four-factor direct (v18) & 0.002189 & 0.066398 & 0.672724 & 0.496778 & 0.003003 & 0.001995 \\
+Four-factor sink (v18) & 0.004742 & 0.076874 & 0.476061 & 0.752908 & 0.003802 & 0.003353 \\
+\bottomrule
+\end{tabular}
+\end{table}

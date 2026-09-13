@@ -1,0 +1,4 @@
+model:
+  lapa_enabled: true
+  epsilon: 0.02
+  prior_strength: 1.0

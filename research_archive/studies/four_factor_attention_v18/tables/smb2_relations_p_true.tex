@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{SMB2 relation endpoint p\_true; three-seed means.}
+\begin{tabular}{lrrrr}
+\toprule
+Method & SMB2 NameLength (n=15) & SMB2 ContextLength (n=15) & SMB2 NameOffset (n=15) & SMB2 ContextOffset (n=15) \\
+\midrule
+RoPE Off & 0.032777 & 0.073155 & 0.000071 & 0.000400 \\
+RoPE + LAPA (v17) & 0.030938 & 0.098443 & 0.002570 & 0.002112 \\
+CoPE Off & 0.050132 & 0.158443 & 0.000218 & 0.000805 \\
+CoPE + LAPA (v17) & 0.009620 & 0.005671 & 0.000894 & 0.000894 \\
+TAPE Off & 0.043557 & 0.074353 & 0.000174 & 0.000813 \\
+TAPE + LAPA (v17) & 0.020903 & 0.218814 & 0.004081 & 0.001273 \\
+SDPA Off & 0.034454 & 0.125987 & 0.000078 & 0.000750 \\
+SDPA + LAPA (v17) & 0.009460 & 0.003921 & 0.001091 & 0.000391 \\
+Four-factor direct (v18) & 0.001937 & 0.004069 & 0.002207 & 0.001783 \\
+Four-factor sink (v18) & 0.002891 & 0.004712 & 0.002805 & 0.003901 \\
+\bottomrule
+\end{tabular}
+\end{table}

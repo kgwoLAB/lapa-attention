@@ -1,0 +1,4 @@
+model:
+  task: endpoint
+# Positive annotated ordinal queries; coordinate NLL only.
+# NOT a replay of the older byte+coordinate endpoint-only factorial study.

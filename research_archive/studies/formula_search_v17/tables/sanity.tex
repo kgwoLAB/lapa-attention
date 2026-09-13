@@ -1,0 +1,25 @@
+% v17 sealed results. Seed t95 intervals (df=2), not protocol-sampling intervals.
+\begin{tabular}{lllllll}
+\hline
+Target & Semantic & N & Reference & p(target) & Hit@1 & NLL \\
+\hline
+DNS & LENGTH & 230 & always\_end & 0.056522 & 0.056522 & 65.173169 \\
+DNS & LENGTH & 230 & always\_null & 0.000000 & 0.000000 & 69.077553 \\
+DNS & LENGTH & 230 & uniform & 0.018129 & 0.000000 & 4.165816 \\
+DNS & POINTER & 36 & always\_end & 0.000000 & 0.000000 & 69.077553 \\
+DNS & POINTER & 36 & always\_null & 0.000000 & 0.000000 & 69.077553 \\
+DNS & POINTER & 36 & uniform & 0.008141 & 0.000000 & 5.004062 \\
+MODBUS & LENGTH & 6 & always\_end & 1.000000 & 1.000000 & 0.000000 \\
+MODBUS & LENGTH & 6 & always\_null & 0.000000 & 0.000000 & 69.077553 \\
+MODBUS & LENGTH & 6 & uniform & 0.079429 & 0.000000 & 2.553219 \\
+TLS & LENGTH & 15 & always\_end & 1.000000 & 1.000000 & 0.000000 \\
+TLS & LENGTH & 15 & always\_null & 0.000000 & 0.000000 & 69.077553 \\
+TLS & LENGTH & 15 & uniform & 0.029738 & 0.000000 & 3.937628 \\
+SMB2 & LENGTH & 30 & always\_end & 0.500000 & 0.500000 & 34.538776 \\
+SMB2 & LENGTH & 30 & always\_null & 0.300000 & 0.300000 & 48.354287 \\
+SMB2 & LENGTH & 30 & uniform & 0.004899 & 0.000000 & 5.339500 \\
+SMB2 & OFFSET & 30 & always\_end & 0.000000 & 0.000000 & 69.077553 \\
+SMB2 & OFFSET & 30 & always\_null & 0.300000 & 0.300000 & 48.354287 \\
+SMB2 & OFFSET & 30 & uniform & 0.004899 & 0.000000 & 5.339500 \\
+\hline
+\end{tabular}

@@ -1,0 +1,4 @@
+model:
+  attention: cope
+  implementation: native_v4_compact
+  causal: false

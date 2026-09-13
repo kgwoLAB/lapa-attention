@@ -1,0 +1,6 @@
+attention: [sdpa, rope, cope, tape]
+lapa_enabled: [false, true]
+seeds: [2026090720]
+steps: 600
+data: data/native_v4/train.jsonl
+# One-seed execution recipe, not the historical ten-seed published summary.

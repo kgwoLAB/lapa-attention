@@ -1,0 +1,11 @@
+% v17 sealed results. Seed t95 intervals (df=2), not protocol-sampling intervals.
+\begin{tabular}{lllll}
+\hline
+Target excluded & Sources & p champion & NLL champion & Promoted formulas \\
+\hline
+DNS & modbus, tls, smb2 & aux\_small & aux\_small & hybrid, aux\_small, attr\_content, shared\_slot\_hybrid \\
+MODBUS & dns, tls, smb2 & mix\_entropy & hybrid & hybrid, attr\_content, shared\_slot\_hybrid, mix\_entropy \\
+TLS & dns, modbus, smb2 & attr\_content & shared\_slot\_hybrid & hybrid, gru\_shared\_attr, shared\_slot\_hybrid, attr\_content \\
+SMB2 & dns, modbus, tls & attr\_content & attr\_content & hybrid, attr\_content, aux\_small, weak\_product \\
+\hline
+\end{tabular}

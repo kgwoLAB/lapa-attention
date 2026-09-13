@@ -1,0 +1,4 @@
+model:
+  task: field_discovery
+  slots: 64
+# Balanced presence + source + program + final coordinate loss on BOTH modes.

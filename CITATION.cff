@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Archived research software metadata draft. Authors, manuscript title and DOI must be verified by the research team before publication. No paper citation is claimed."
+title: "LAPA Attention / X-Route"
+type: software
+version: 0.1.0
+repository-code: "https://github.com/kgwoLAB/lapa-attention"
+license: Apache-2.0
+# Author names and manuscript metadata are intentionally not invented.
+# Complete this draft before using GitHub's citation publishing workflow.

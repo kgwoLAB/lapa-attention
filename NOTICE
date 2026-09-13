@@ -1,0 +1,25 @@
+LAPA Attention / X-Route
+Copyright 2026 LAPA Attention contributors
+
+Project-controlled contributions are licensed under the Apache License,
+Version 2.0. Third-party copyrights and license conditions are retained;
+the project license does not relicense material owned by others.
+
+The compact TAPE/RoPE position path is adapted through the local research
+implementation from VITA-Group/TAPE. Retained upstream notices:
+
+Copyright (c) 2024 Jiajun Zhu
+Copyright 2022 EleutherAI and the HuggingFace Inc. team. All rights reserved.
+
+The upstream repository has an MIT license, and its models/llama/adape.py
+file has an Apache-2.0 header. Both notices and their license texts are
+preserved in LICENSES/. The local compact implementation changes dimensional
+handling, masks, initialization and encoder integration. It is not a full
+distribution of the upstream Llama model or any pretrained model weights.
+
+RoFormer and Contextual Position Encoding are identified as method sources
+in THIRD_PARTY_NOTICES.md. An algorithm/paper citation is not represented as
+a verified license to an unavailable upstream software repository.
+
+Raw traffic, datasets, learned weights and local-only experiment artifacts
+are excluded from this public release and are not licensed by this notice.

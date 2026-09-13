@@ -1,0 +1,4 @@
+model:
+  attention: tape
+  position_size: 16
+  implementation: native_v4_compact

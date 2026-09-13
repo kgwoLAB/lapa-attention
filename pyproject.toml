@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lapa-attention"
+version = "0.1.0"
+description = "Standalone byte-address routing with SDPA, RoPE, CoPE and TAPE compact backbones"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = ["torch>=2.2", "PyYAML>=6"]
+
+[project.urls]
+Repository = "https://github.com/kgwoLAB/lapa-attention"
+
+[project.optional-dependencies]
+plots = ["matplotlib>=3.7", "numpy>=1.24"]
+
+[tool.setuptools]
+license-files = ["LICENSE", "NOTICE", "LICENSES/*.txt", "LICENSES/README.md"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
