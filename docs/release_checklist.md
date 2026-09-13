@@ -1,50 +1,51 @@
-# 공개 릴리스 체크리스트
+# Public Release Checklist
 
-대상: [kgwoLAB/lapa-attention](https://github.com/kgwoLAB/lapa-attention).
-사용자는 2026-09-13에 이 저장소로 push하고 라이선스를 지정하며 민감 정보를
-제거하도록 요청했다. 기술 검사는 완전한 보안·개인정보·법률 감사를 뜻하지 않는다.
-이전 로컬 준비 단계의 기록은 [WORK_LOG.md](../WORK_LOG.md)에 보존한다.
+Target: [kgwoLAB/lapa-attention](https://github.com/kgwoLAB/lapa-attention).
+On 2026-09-13, the user requested a push to this repository, license selection,
+and removal of sensitive information. Technical checks are not a complete
+security, privacy, or legal audit. Earlier local preparation records are
+preserved in [WORK_LOG.md](../WORK_LOG.md).
 
-## 1. 라이선스와 배포 범위
+## 1. Licensing and distribution scope
 
-- [x] 사용자 지정 저장소가 비어 있는 public 저장소이며 push 권한이 있음을 확인했다.
-- [x] 프로젝트 소유 코드·문서에 [Apache-2.0](../LICENSE)을 지정했다.
-- [x] 공식 출처에서 확인한 TAPE MIT와 Apache-2.0 고지·원문을 [LICENSES](../LICENSES/README.md)에 보존했다.
-- [x] 세 위치 모듈에 출처/변경 주석만 추가했다. 과거 파일 해시는 더 이상 현재 파일의 해시가 아님을 명시했다.
-- [x] CoPE는 로컬 수식 구현이며 공식 소프트웨어 라이선스 미확인을 별도로 고지했다.
-- [x] 원시 데이터·가중치·패킷별 결과·로컬 검증 자료는 공개 범위에서 제외했다.
-- [ ] 논문 작성자·출판 정보 확정: 인용 정보는 초안이며 새 논문/DOI를 만들어 넣지 않았다.
-- [ ] 원시 데이터·가중치 재배포 승인: 이번 공개 대상이 아니며 별도 검토가 필요하다.
+- [x] Confirmed before initial publication that the specified repository was empty, public, and writable.
+- [x] Selected [Apache-2.0](../LICENSE) for project-owned code and documentation.
+- [x] Preserved the officially verified TAPE MIT and Apache-2.0 notices and complete texts in [LICENSES](../LICENSES/README.md).
+- [x] Added attribution/modification comments only to three position-related modules and documented that historical file hashes no longer describe those annotated files.
+- [x] Disclosed that CoPE is a local equation-level implementation and that an official software license was not verified.
+- [x] Excluded raw data, weights, per-packet results, and local verification assets from publication.
+- [ ] Finalize paper authorship and publication metadata: citation information remains a draft; no paper or DOI was invented.
+- [ ] Approve dataset/weight redistribution: these are not part of this release and require separate review.
 
-## 2. 민감 정보와 이력 분리
+## 2. Sensitive information and history separation
 
-- [x] 텍스트의 개인 홈 경로, 이메일, 내부 IP/MAC, 자격 증명, 인증 URL을 검사했다.
-- [x] 개인 작업공간 경로를 치환하고 이전 비공개 저장소 주소를 공개 문서에서 제거했다.
-- [x] 29개 PNG의 메타데이터/청크, 29개 SVG의 XML/메타데이터를 검사했다.
-- [x] 15개 PDF, 전체 41페이지의 추출 텍스트·메타데이터·첨부·액션과 압축 스트림을 검사했다.
-- [x] 정상적인 논문 출처·저작권자 고지는 삭제하지 않았다. 집계 수치와 해시를 자격 증명으로 오인해 없애지 않았다.
-- [x] 개인 이메일 대신 공개 GitHub noreply 커밋 주소를 선택했다.
-- [x] 이전 Git 이력을 로컬 전용 백업으로 보존하고 새 object DB에 과거 commit이 없음을 확인했다.
-- [x] 새 초기 커밋으로 올릴 324개 tracked 파일을 다시 검사했다.
+- [x] Scanned text for personal home paths, emails, internal IP/MAC addresses, credentials, and authenticated URLs.
+- [x] Replaced personal workspace paths and removed the previous private-repository address from public documentation.
+- [x] Inspected metadata/chunks in 29 PNG files and XML/metadata in 29 SVG files.
+- [x] Inspected extracted text, metadata, attachments, actions, and compressed streams in 15 PDFs covering all 41 pages.
+- [x] Preserved legitimate paper citations and copyright notices; did not remove aggregate values or hashes by misclassifying them as credentials.
+- [x] Selected a public GitHub noreply commit address instead of a personal email.
+- [x] Preserved previous Git history in a local-only backup and confirmed the old commit was absent from the new object database.
+- [x] Rechecked all 324 tracked files prepared for the new initial commit.
 
-## 3. 연구 기록과 기능 검증
+## 3. Research records and functional verification
 
-- [x] v18의 신규 24모델/600update와 재사용 96대조군을 구분하고 실패·제한을 보존했다.
-- [x] 평균 목적지 확률·NLL·Hit@1·F1의 의미와 source 기여 하한을 혼동하지 않았다.
-- [x] 원 연구 디렉터리·데이터·가중치를 변경하지 않았다.
-- [x] 역사적 학습 스냅샷이 비공개 자료와 원 환경에 의존함을 설명했다.
-- [x] 공개 라이선스 고지를 반영한 아카이브 209개 해시와 숫자 보존을 재검사했다.
-- [x] 최종 단위 테스트 84개·기본 예제 3개·wheel 빌드/격리 설치 8조건을 확인했다.
-- [x] 최종 공개 후보 검사 및 staged diff 검사를 통과했다.
+- [x] Distinguished v18's 24 new models/600 updates from its 96 reused controls, preserving failures and limitations.
+- [x] Kept correct-destination probability, NLL, Hit@1, F1, and the source-contribution lower bound distinct.
+- [x] Left original study directories, datasets, and weights unchanged.
+- [x] Documented the historical scripts' dependence on private assets and their original environment.
+- [x] Rechecked all 209 archive hashes and numerical preservation after updating publication license notices.
+- [x] Verified 84 unit tests, three default examples, and wheel build/isolated installation across eight conditions.
+- [x] Passed the final candidate scan and staged-diff checks.
 
-## 4. 게시 및 원격 검증
+## 4. Publication and remote verification
 
-- [x] 사용자 요청은 새 정리본의 공개 push이며 이전 비공개 원격 변경은 포함하지 않는다.
-- [x] force 없이 새 초기 커밋을 대상 저장소 main에 push했다.
-- [x] 원격 초기 commit `3667766`의 부모 없음·324개 blob 일치·noreply 주소를 확인했다.
-- [x] 초기 공개 커밋의 [GitHub CI](https://github.com/kgwoLAB/lapa-attention/actions/runs/34745839581)가 성공했다. 로컬 테스트 PASS와 원격 CI PASS를 구분한다.
-- [ ] GitHub 읽기 전용 Archive 전환: 요청하지 않았으므로 수행하지 않는다.
+- [x] The publication request covered the new sanitized public snapshot, not changes to the previous private remote.
+- [x] Pushed a new initial commit to the target main branch without force.
+- [x] Verified that remote initial commit `3667766` has no parents, matches all 324 file blobs, and uses the noreply identity.
+- [x] Confirmed that the initial public commit's [GitHub CI](https://github.com/kgwoLAB/lapa-attention/actions/runs/34745839581) succeeded; remote CI success is distinct from local test success.
+- [ ] Enable GitHub's read-only Archive setting: not requested and therefore not performed.
 
-자동 검사에서 탐지하지 못하는 민감 정보가 있을 수 있으며, 공식 CoPE 소프트웨어
-라이선스 미확인은 별도 한계다. 모든 개인정보·제3자 권리 문제가 완전히 해결됐다는
-보증으로 이 체크리스트를 사용하지 않는다.
+Automated checks may miss sensitive information. The unverified official CoPE
+software license is a separate limitation. This checklist is not a guarantee
+that every privacy or third-party rights issue has been resolved.

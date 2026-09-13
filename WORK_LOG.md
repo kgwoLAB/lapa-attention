@@ -227,3 +227,22 @@ GitHub Actions run [34745839581](https://github.com/kgwoLAB/lapa-attention/actio
 completed successfully for that initial commit. The follow-up commit records
 these observed publication checks; it does not change model code, data, figures,
 licensing or the initial clean-history boundary.
+
+## 2026-09-13 — English public documentation
+
+Following the user's request, translated the root README, research archive
+guide, archive-status explanation, and release checklist into English for the
+personal repository. Added an English GitHub About description. The scientific
+limitations, license scope, outstanding CoPE software-license qualification,
+installation commands, and reproduction boundaries remain intact.
+
+Historical study records retain their original language and hashes; the
+Unicode round-trip test fixture is unchanged. No model code, datasets, figures,
+archived study assets, licenses, or numerical results were edited. The six
+numeric result-table rows match the preceding revision exactly.
+
+Validation: all four public overview/maintenance documents contain no Korean
+prose; all 44 relative document/image links resolve; all 84 unit tests and 209
+archive hash checks pass. The 324-file release-candidate scan has zero findings,
+and whitespace checks pass. This update targets only
+`kgwoLAB/lapa-attention`; it does not update the organization repository.
