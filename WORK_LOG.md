@@ -212,3 +212,18 @@ preserves their byte-exact archive hashes; source/document whitespace checks
 remain enabled. The preserved v17 DATA_LIMITATIONS report also has a narrow
 blank-at-EOF exception. No historical asset was edited to suppress these
 formatting-only warnings.
+
+### Remote publication verified
+
+Published the fresh root commit
+`36677664f0863f8db58aa5a46488d1df7b6ff9ef` to the requested `main` branch
+without force. The GitHub API confirmed that it has no parents, all 324 remote
+file blobs exactly match the local commit, both commit identities use the
+public GitHub noreply address, and GitHub recognizes Apache-2.0. The repository
+is public and is **not** server-archived. The old private history is absent from
+the new object database and remains only in the ignored local backup.
+
+GitHub Actions run [34745839581](https://github.com/kgwoLAB/lapa-attention/actions/runs/34745839581)
+completed successfully for that initial commit. The follow-up commit records
+these observed publication checks; it does not change model code, data, figures,
+licensing or the initial clean-history boundary.

@@ -40,9 +40,9 @@
 ## 4. 게시 및 원격 검증
 
 - [x] 사용자 요청은 새 정리본의 공개 push이며 이전 비공개 원격 변경은 포함하지 않는다.
-- [ ] force 없이 새 초기 커밋을 대상 저장소 main에 push했다.
-- [ ] 원격 commit SHA·파일 tree·개인정보 없는 이력을 확인했다.
-- [ ] GitHub CI 완료 여부를 확인했다. 로컬 테스트 PASS와 원격 CI PASS를 구분한다.
+- [x] force 없이 새 초기 커밋을 대상 저장소 main에 push했다.
+- [x] 원격 초기 commit `3667766`의 부모 없음·324개 blob 일치·noreply 주소를 확인했다.
+- [x] 초기 공개 커밋의 [GitHub CI](https://github.com/kgwoLAB/lapa-attention/actions/runs/34745839581)가 성공했다. 로컬 테스트 PASS와 원격 CI PASS를 구분한다.
 - [ ] GitHub 읽기 전용 Archive 전환: 요청하지 않았으므로 수행하지 않는다.
 
 자동 검사에서 탐지하지 못하는 민감 정보가 있을 수 있으며, 공식 CoPE 소프트웨어
